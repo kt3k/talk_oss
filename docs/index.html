@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OSS コントリビュートのすすめ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+    <meta property="og:title" content="OSS コントリビュートのすすめ"/>
+    
+    
+    <meta property="og:description" content="OSS コントリビュートのすすめ" />
+    
+    
+    
+    
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+    
+    
+    <style type="text/css">
+      body {
+  font-family: 'Avenir Next', 'Hiragino Kaku Gothic ProN', 'Meiryo', 'メイリオ', sans-serif;
+  font-weight: bold;
+}
+h1, h2, h3 {
+  font-weight: bold;
+}
+.remark-code,
+.remark-inline-code {
+  font-family: 'Menlo', 'Monaco', 'Courier new', monospace;
+}
+
+code.remark-code {
+  display: block;
+  padding: 0.7em;
+  border-radius: 5px;
+  background-color: #272822;
+  color: #f3f3f3;
+  font-size: 23px;
+}
+
+.remark-slide-content {
+  color: #24292e;
+  font-size: 32px;
+  padding: 15px 60px;
+}
+
+.remark-slide-content.inverse {
+  color: #f3f3f3;
+  background-color: #272822;
+}
+
+.remark-slide-number a {
+  color: #24292e;
+  text-decoration: none;
+}
+
+.inverse .remark-slide-number a {
+  color: #f3f3f3;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.gap-2 {
+  gap: 8px;
+}
+.text-4xl {
+  font-size: 40px;
+}
+
+      @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+    </style>
+  </head>
+  <body>
+    <textarea id="source" style="display: none">class: middle center
+<!-- theme: スキルアップ -->
+
+# オープソース (OSS) 活動<br/>のすすめ
+
+---
+
+## OSS に貢献すると良いこと1
+
+--
+- 普段使っている OSS に貢献することで知見が深まる
+
+---
+
+## OSS に貢献すると良いこと2
+
+--
+- 関心の近い知り合いが増える
+
+---
+
+## OSS に貢献すると良いこと3
+
+--
+- セルフブランディングになる
+
+---
+
+## 何から始める?
+
+- プロジェクト選び 
+- 課題探し
+- プルリクを作る
+
+---
+
+## プロジェクト選び
+
+- 普段使っているプロジェクト
+- 興味があるプロジェクト
+- なんとなく好きなプロジェクト
+
+---
+
+## プロジェクト選び
+
+- プロジェクトによって貢献への welcome 度に差がある
+- すごく保守的: browserify
+- 開発終了: lodash
+- 貢献 welcome: Node.js, Deno
+
+
+--
+プロジェクト選びは、深く考えずに、<br />
+まずは色々見てみた方が良いかも・・・
+
+---
+
+## 課題探し
+
+- 自分 or 同僚が踏んだバグの解決
+  - 1番モチベーションが強く持てる課題
+  - 自分の最初のプルリクは同僚が踏んだバグの解決
+
+---
+
+## 課題探し
+
+- 自分が感じた不便さの解消
+  - 不便さの説明が大事
+  - バグ修正よりは少しハードルが高い
+
+---
+
+## 課題探し
+
+バグも踏んでないし、特に不便も感じてない場合
+
+- [Good first issue] をやってみる
+  - 初めての人が取り組みやすい issue につけるラベル
+  - 本当に簡単なものも結構ある
+
+---
+
+## 課題探し
+
+- [Help Wanted] ラベル
+  - メンテナがやりたくない issue
+  - やると感謝される
+
+---
+
+## 課題探し (ドキュメント)
+
+- ドキュメント修正
+  - ドキュメントをひたすら読んでミスを見つける
+- サンプル追加
+  - 例があった方が分かりやすいけど、例が足りないところを見つける
+- issue で [docs] ラベルをつけて整理してくれているプロジェクトもある
+
+
+--
+ドキュメントへの貢献も立派な OSS 活動
+
+---
+
+## プルリクを作る1
+
+- 自動テスト実行
+  - テストの実行方法がどこかにドキュメントされているはず
+  - 例 npm test, make test, etc
+  - これができるのがスタート地点
+
+---
+
+## プルリクを作る2
+
+- 自分の変更を入れる
+  - 自動テストを修正・追加する
+  - 自分の変更で既存のテストが壊れた場合は、それを修正すれば良い
+  - テストが通ってしまった場合、自分で新たなテストを書かないといけない
+
+---
+
+## プルリクを作る3
+
+- 何をしたか説明する
+- 何が解決されるか説明する
+
+---
+
+## プルリクで見る観点 (私見)<br/><br/><br/>
+
+## テスト > 説明 > コード
+
+--
+
+- まずはテストをしっかり書くことを考える。
+- テストが書けない場合は、説明を頑張る
+
+---
+
+## その他の貢献方法
+
+コードを直す・追加する話をメインにしましたが、OSS には他の貢献方法もあります
+
+- ドキュメントの翻訳 (例 ja.react.dev)
+- OSS の Web サイトの修正
+- コミュニティの Discord・Slack などで質問に答える
+- issue のトリアージをする (バグか使い方の間違いかの判断など)
+
+---
+
+### その他: 自分でプロジェクト自体始める
+
+- 自分で 0 から何か作るのも立派な OSS 活動
+- npm では小さいモジュールの公開が推奨されている
+- プラグインツール (ESLint とか) を作って公開するのは割とハードルが低いかも?
+
+---
+
+## OSS を頑張り続けると
+
+- その OSS 自体が仕事になったりすることも
+
+--
+- 自分の例
+  - Deno に貢献し続けたら Deno 社に雇われた
+
+--
+- Hono の作者ゆーすけベーさん
+  - Hono を作っていたら Cloudflare 社で Hono の開発を続けることに
+
+--
+- git のメンテナの浜野さん
+
+--
+- Linux の Linus, etc
+
+---
+
+## まとめ
+
+- OSS 活動には様々なレベルがある
+  - ドキュメントへの貢献
+  - コミュニケーションへの貢献
+  - ソースコードの貢献
+- ソースコードに貢献する場合はテストを重視しましょう
+
+---
+
+## まとめ
+
+- OSS 活動には様々なメリットがある
+  - 知見が深まる・スキルアップ
+  - 関心の近い知り合いが増える
+  - セルフブランディング
+- これらのメリットはエンジニアである限りは無駄になることはない
+
+---
+class: middle center
+
+ぜひ OSS に貢献してみましょう!
+
+
+
+</textarea>
+    <div style="z-index: -1; position: fixed; display: flex; align-items: center; gap: 4px;">
+      <svg style="animation: spin 1s linear infinite; width: 18px; height: 18px;" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-refresh" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" />
+        <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4" />
+      </svg>
+      <span>loading...</span>
+    </div>
+    <script src="remark.js"></script>
+    
+    <script>
+      window.slideshow = remark.create({"slideNumberFormat":"OSS の話 - %current% / %total%"})
+    </script>
+    
+    <script>
+      
+      ;window.LiveReloadOptions = {
+        host: 'localhost',
+        port: '35729'
+      };
+    </script>
+  </body>
+</html>
